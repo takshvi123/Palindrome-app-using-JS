@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Palindrome app </h2>
+
+
+
+
+
+    <script>
+        function palindrome (mystring)
+        {
+            var input = mystring.toLowerCase()
+            var rev = input.split(' ').reverse().join(' ')
+            if(input == rev)
+            {
+                document.write("It is a palindrome")
+
+            }
+            else
+            {
+                document.write("it is not a palindrome")
+            }
+
+        }
+        palindrome ("me hello wow hello m")
+    </script>
+</body>
+
+</html>
